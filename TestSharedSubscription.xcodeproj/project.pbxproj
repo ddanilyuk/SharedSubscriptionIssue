@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DBA734822CC823D4006A8229 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DBA734812CC823D4006A8229 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DBA734642CC8239B006A8229 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA734822CC823D4006A8229 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = TestSharedSubscription;
 			packageProductDependencies = (
+				DBA734812CC823D4006A8229 /* ComposableArchitecture */,
 			);
 			productName = TestSharedSubscription;
 			productReference = DBA734532CC82398006A8229 /* TestSharedSubscription.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = DBA7344A2CC82398006A8229;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DBA734802CC823D4006A8229 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DBA734542CC82398006A8229 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBA734802CC823D4006A8229 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBA734812CC823D4006A8229 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA734802CC823D4006A8229 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBA7344B2CC82398006A8229 /* Project object */;
 }
